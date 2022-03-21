@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms</title>
+</head>
+<body>
+  <h1>Form example</h1>
+  <form action="/api/users" method="post" id="form">
+    <div>
+      <label for="email">Email</label>
+      <input
+        required
+        type="email"
+        id="email"
+        name="mail"
+      >
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input required type="password" id="password" name="password">
+    </div>
+    <!--
+      <button type="button">Habilitar campos extra</button>
+      <div>
+        <label>extra fields</label>
+        <input>
+      </div>
+    -->
+    <div>
+      <select name="car" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <input list="favBrowser" name="favBrowser">
+      <datalist id="favBrowser">
+        <option value="firefox">
+        <option value="chrome">
+      </datalist>
+    </div>
+    <br>
+    <br>
+
+    <fieldset>
+      <legend>Fav programming lang</legend>
+      <label for="js">Javascript</label>
+      <input
+        type="radio"
+        name="fav_language"
+        id="js"
+        value="javascriptTheBest"
+      >
+      <label for="net">.NET</label>
+      <input
+        type="radio"
+        name="fav_language"
+        id="net"
+        value="net"
+      >
+      <label for="go">Go</label>
+      <input
+        type="radio"
+        name="fav_language"
+        id="go"
+      >
+    </fieldset>
+
+    <br>
+    <br>
+    <fieldset>
+      <legend>Fav programming langs</legend>
+      <label for="jsCheck">Javascript</label>
+      <input
+        type="checkbox"
+        name="fav_languages_checkbox"
+        id="jsCheck"
+        value="javascriptTheBest"
+      >
+      <label for="netCheck">.NET</label>
+      <input
+        type="checkbox"
+        name="fav_languages_checkbox"
+        id="netCheck"
+        value="net"
+      >
+      <label for="goCheck">Go</label>
+      <input
+        type="checkbox"
+        name="fav_languages_checkbox"
+        id="goCheck"
+        value="go"
+      >
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+      <legend>Terms and consition</legend>
+      <label for="terms">Accept</label>
+      <input
+        type="checkbox"
+        name="terms"
+        id="terms"
+        required
+      >
+    </fieldset>
+
+    <br>
+
+    <label for="expenses">light expenses</label>
+    <input
+      id="expenses"
+      type="number"
+      min="1000"
+      step="1000"
+      placeholder="add light expenses"
+    >
+
+    <br>
+
+    <label for="phone">Phone</label>
+    <input
+      type="tel"
+      pattern="[0-9]+"
+      title="only numbers"
+      id="phone"
+      maxlength="9"
+      required
+    >
+    <br>
+    <input type="range" name="" id="">
+    <br>
+    <input type="datetime-local">
+    <input type="color">
+    <div>
+      <input type="submit" value="Registrar!">
+    </div>
+  </form>
+</body>
+</html>
