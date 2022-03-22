@@ -1,0 +1,65 @@
+:root {
+  --main-primary-color: #4C4AE6;
+  --main-secondary-color: #EF9D18;
+  --main-white-color: #FFF;
+  --main-black-color: #000;
+  --main-h1-font: 32px;
+  --main-font: 'Raleway', sans-serif;
+  --main-summary-bg: #3e3e3e;
+  /* --main-white-color: #FFFFFF; */
+  /* --main-white-color: rgb(255, 255, 255); */
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.shows-container h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* --- content --- */
+.shows-container .shows-items {
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.shows-container .shows-items .img-container img {
+  width: 100%;
+}
+
+.show-item .img-container {
+  max-height: 180px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* media queries */
+@media (min-width: 760px) {
+  .show-item .img-container {
+    max-height: 300px;
+  }
+
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .shows-container {
+    width: 80%;
+  }
+
+  .shows-container .shows-items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

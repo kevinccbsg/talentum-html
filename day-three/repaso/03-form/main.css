@@ -1,0 +1,70 @@
+:root {
+  --main-primary-color: #4C4AE6;
+  --main-secondary-color: #EF9D18;
+  --main-white-color: #FFF;
+  --main-black-color: #000;
+  --main-h1-font: 32px;
+  --main-font: 'Raleway', sans-serif;
+  --main-summary-bg: #3e3e3e;
+  /* --main-white-color: #FFFFFF; */
+  /* --main-white-color: rgb(255, 255, 255); */
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.main-bg {
+  background-color: var(--main-primary-color);
+  color: var(--main-white-color);
+}
+
+.main-content {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+/* form */
+
+.search-form {
+  margin: 20px 0;
+}
+
+.search-form h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.search-form .input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+
+.search-form .input-container .search-label {
+  margin-bottom: 10px;
+}
+
+#search {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search-form input[type="button"] {
+  color: var(--main-white-color);
+  background-color: var(--main-primary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+}
+
+.search-form input[type="button"]:hover {
+  background-color: #6f6de3;
+}

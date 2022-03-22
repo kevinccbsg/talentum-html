@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="find your favorite animes">
+  <meta property="og:description" content="find your favorite animes">
+  <meta property="og:title" content="Anime finder">
+  <meta name="twitter:title" content="Example twitter">
+  <title>Example with css</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/day-two/web-html-css/reset.css">
+  <link rel="stylesheet" href="/day-two/web-html-css/main.css">
+  <!-- relativo a donde estoy -->
+  <!-- <link rel="stylesheet" href="main.css"> -->
+  <!-- <style>
+    .super-class_test {
+      background-color: aqua;
+    }
+    div {
+      background-color: green;
+      color: black;
+    }
+    #search {
+      color: blueviolet;
+    }
+  </style> -->
+</head>
+<body>
+  <nav class="main-bg navbar">
+    <div class="img-container">
+      <img
+        src="https://raw.githubusercontent.com/cypress-es/anime-finder/main/src/assets/logo.png"
+        alt="logo"
+      >
+    </div>
+    <a class="app-title" href="/">
+      Anime finder
+    </a>
+  </nav>
+  <main class="main-content">
+    <section class="search-form">
+      <h1>find your favorite anime</h1>
+      <form action="">
+        <div class="input-container">
+          <label class="search-label" for="search">Search</label>
+          <input type="text" id="search" name="search" placeholder="search favorite anime">
+        </div>
+        <div>
+          <input type="button" value="search">
+        </div>
+      </form>
+    </section>
+    <section class="content">
+      <aside class="sidebar">
+        <details open>
+          <summary class="summary">Animes en emision</summary>
+          <ul class="anime-list">
+            <li>Detective conan</li>
+            <li>Full metal</li>
+            <li>Kill la Kill</li>
+            <li>shingeky no kiojin</li>
+          </ul>
+        </details>
+      </aside>
+      <section class="shows-container">
+        <h2>show list</h2>
+        <div class="shows-items">
+          <article class="show-item">
+            <figure>
+              <div class="img-container">
+                <img
+                  src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx104578-LaZYFkmhinfB.jpg"
+                  alt="Attack on Titan Season 3 Part 2"
+                  title="Attack on Titan Season 3 Part 2"
+                >
+              </div>
+              <figcaption>Attack on Titan Season 3 Part 2</figcaption>
+            </figure>
+          </article>
+          <article class="show-item">
+            <figure>
+              <div class="img-container">
+                <img
+                  src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9253-7pdcVzQSkKxT.jpg"
+                  alt="Steins;Gate"
+                  title="Steins;Gate"
+                >
+              </div>
+              <figcaption>Steins;Gate</figcaption>
+            </figure>
+          </article>
+          <article class="show-item">
+            <figure>
+              <div class="img-container">
+                <img
+                  src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx227-kxQ3PDHrrqp5.jpg"
+                  alt="FLCL"
+                  title="FLCL"
+                >
+              </div>
+              <figcaption>FLCL</figcaption>
+            </figure>
+          </article>
+          <article class="show-item">
+            <figure>
+              <div class="img-container">
+                <img
+                  src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx32-i4ijZI4MuPiV.jpg"
+                  alt="Shin Seiki Evangelion: THE END OF EVANGELION"
+                  title="Shin Seiki Evangelion: THE END OF EVANGELION"
+                >
+              </div>
+              <figcaption>THE END OF EVANGELION</figcaption>
+            </figure>
+          </article>
+          <article class="show-item">
+            <figure>
+              <div class="img-container">
+                <img
+                  src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx7791-kkyTqv0HI7D7.png"
+                  alt="K-ON!!"
+                  title="K-ON!!"
+                >
+              </div>
+              <figcaption>K-ON!!</figcaption>
+            </figure>
+          </article>
+          <article class="show-item">
+            <figure>
+              <div class="img-container">
+                <img
+                  src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101922-PEn1CTc93blC.jpg"
+                  alt="Demon Slayer: Kimetsu no Yaiba"
+                  title="Demon Slayer: Kimetsu no Yaiba"
+                >
+              </div>
+              <figcaption>Demon Slayer: Kimetsu no Yaiba</figcaption>
+            </figure>
+          </article>
+          <article class="show-item">
+            <figure>
+              <div class="img-container">
+                <img
+                  src="	https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx535-xCRCSK8YG89S.png"
+                  alt="The Slayers Next"
+                  title="The Slayers Next"
+                >
+              </div>
+              <figcaption>The Slayers Next</figcaption>
+            </figure>
+          </article>
+          <article class="show-item">
+            <figure>
+              <div class="img-container">
+                <img
+                  src="	https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1535-lawCwhzhi96X.jpg"
+                  alt="Death Note"
+                  title="Death Note"
+                >
+              </div>
+              <figcaption>Death Note</figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer class="main-bg footer">
+    anime finder Inc.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+:root {
+  --main-primary-color: #4C4AE6;
+  --main-secondary-color: #EF9D18;
+  --main-white-color: #FFF;
+  --main-black-color: #000;
+  --main-h1-font: 32px;
+  --main-font: 'Raleway', sans-serif;
+  --main-summary-bg: #3e3e3e;
+  /* --main-white-color: #FFFFFF; */
+  /* --main-white-color: rgb(255, 255, 255); */
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.main-content {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+/* --- sidebar ---- */
+.summary {
+  padding: 10px;
+  background-color: var(--main-summary-bg);
+  color: var(--main-white-color);
+}
+
+.sidebar .anime-list {
+  margin: 5px 0 10px 0;
+}
+
+.sidebar .anime-list li {
+  padding: 5px 0 5px 10px;
+}
+
+/* media queries */
+@media (min-width: 760px) {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sidebar {
+    width: 15%;
+  }
+  .summary {
+    cursor: pointer;
+  }
+}

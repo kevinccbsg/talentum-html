@@ -1,0 +1,41 @@
+:root {
+  --main-primary-color: #4C4AE6;
+  --main-secondary-color: #EF9D18;
+  --main-white-color: #FFF;
+  --main-black-color: #000;
+  --main-h1-font: 32px;
+  --main-font: 'Raleway', sans-serif;
+  --main-summary-bg: #3e3e3e;
+  /* --main-white-color: #FFFFFF; */
+  /* --main-white-color: rgb(255, 255, 255); */
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.main-bg {
+  background-color: var(--main-primary-color);
+  color: var(--main-white-color);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navbar .img-container {
+  width: 50px;
+}
+
+.navbar .img-container img {
+  width: 100%;
+}
+
+.navbar .app-title {
+  color: var(--main-white-color);
+  text-decoration: none;
+  font-size: 2rem;
+}
