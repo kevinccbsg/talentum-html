@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- srcset con w -->
+  <picture>
+    <!-- image 1 -->
+    <source
+      media="(min-width: 800px)"
+      srcset="
+      https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/head.jpg,
+      https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/head-2x.jpg 2x
+      "
+    >
+    <!-- image 2 -->
+    <source
+      media="(min-width: 450px)"
+      srcset="
+        https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/head-small.jpg,
+        https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/head-small-2x.jpg 2x
+      "
+    >
+    <!-- image 3 -->
+    <img
+      src="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/head-fb.jpg"
+      srcset="
+        https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/head-fb-2x.jpg 2x
+      "
+      alt="a head carved out of wood"
+    >
+  </picture>
+  <!-- srcset -->
+  <img
+    src="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/400.png" 
+    sizes="(min-width: 600px) 25vw, (min-width: 500px) 50vw, 100vw"
+    srcset="
+      https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/100.png 100w,
+      https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/200.png 200w,
+      https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/400.png 400w,
+      https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/800.png 800w,
+      https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/1600.png 1600w,
+      https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/2000.png 2000w
+    "
+    alt="an example image"
+  >
+</body>
+</html>
