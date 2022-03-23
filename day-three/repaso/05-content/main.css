@@ -31,7 +31,8 @@ body {
   font-size: 1.2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 10px;
+  
 }
 
 .shows-container .shows-items .img-container img {
@@ -56,10 +57,12 @@ body {
   }
 
   .shows-container {
-    width: 80%;
+    width: 100%;
   }
 
   .shows-container .shows-items {
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(7, 1fr);
+    /* gap: 10px; */
   }
 }

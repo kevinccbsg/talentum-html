@@ -33,6 +33,10 @@ body {
   color: var(--main-white-color);
 }
 
+.sidebar {
+  width: 100%;
+}
+
 .sidebar .anime-list {
   margin: 5px 0 10px 0;
 }
@@ -40,7 +44,10 @@ body {
 .sidebar .anime-list li {
   padding: 5px 0 5px 10px;
 }
-
+/*
+ 100px -- 200px -- 300px -- 760px -- 1200px -- 4k
+                              |-> aplicar el media query (min-width: 760px)
+*/
 /* media queries */
 @media (min-width: 760px) {
   .content {

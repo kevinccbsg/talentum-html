@@ -55,16 +55,16 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.search-form input[type="button"] {
+.search-form input[type="submit"] {
   color: var(--main-white-color);
   background-color: var(--main-primary-color);
   border: none;
   border-radius: 5px;
   padding: 10px 12px;
   cursor: pointer;
-  transition: background-color 0.3s linear;
+  transition: background-color 0.3s ease-out;
 }
 
-.search-form input[type="button"]:hover {
+.search-form input[type="submit"]:hover {
   background-color: #6f6de3;
 }

@@ -21,13 +21,15 @@ body {
 
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
+  border: 5px solid green;
 }
 
 .navbar .img-container {
   width: 50px;
+  border: 1px solid red;
 }
 
 .navbar .img-container img {
@@ -35,7 +37,9 @@ body {
 }
 
 .navbar .app-title {
+  border: 1px solid red;
   color: var(--main-white-color);
   text-decoration: none;
+  /* 16px === 1rem */
   font-size: 2rem;
 }

@@ -76,7 +76,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.search-form input[type="button"] {
+.search-form input[type="submit"] {
   color: var(--main-white-color);
   background-color: var(--main-primary-color);
   border: none;
@@ -86,8 +86,12 @@ body {
   transition: background-color 0.3s linear;
 }
 
-.search-form input[type="button"]:hover {
+.search-form input[type="submit"]:hover {
   background-color: #6f6de3;
+}
+
+.error #search {
+  border: 1px solid red;
 }
 
 .content {
